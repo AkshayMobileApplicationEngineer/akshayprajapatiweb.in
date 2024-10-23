@@ -47,3 +47,19 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         alert('Please fill out all fields.');
     }
 });
+
+
+
+
+// Simple form validation for the contact form
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+    if (name && email && message) {
+        alert('Message sent successfully!');
+    } else {
+        event.preventDefault();
+        alert('Please fill out all the fields.');
+    }
+});

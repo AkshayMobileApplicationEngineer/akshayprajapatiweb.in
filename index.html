@@ -6,29 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akshay Prajapati | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
 <header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
+        <a href="project.html">Projects</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
+<!-- Hero Section -->
 <section id="hero">
     <div class="hero-content">
+        <!-- Make sure to replace the path with your actual image path -->
+        <img src="assets/images/akshay-headshot.jpg" alt="Akshay Prajapati" class="profile-img">
         <h1>Hi, I'm Akshay Prajapati</h1>
-        <p>Android Developer | Java, Kotlin, Flutter</p>
-        <a href="projects.html" class="btn">View Projects</a>
+        <p>A Mobile App Developer specializing in Flutter and Android.</p>
     </div>
 </section>
 
+<!-- Newsletter Section -->
+<section class="newsletter">
+    <h2>Subscribe to My Newsletter</h2>
+    <!-- Replace 'your-backend-script' with the actual backend handling your form -->
+    <form action="your-backend-script" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<!-- Contact Section -->
+<section class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="/contact" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
 <footer>
     <p>&copy; 2024 Akshay Prajapati. All Rights Reserved.</p>
 </footer>
 
+<!-- External JavaScript File -->
 <script src="js/script.js"></script>
 </body>
 </html>

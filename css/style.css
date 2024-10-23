@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -19,6 +20,11 @@ header nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffcc00; /* Gold */
 }
 
 section {
@@ -36,17 +42,49 @@ section {
 #hero .hero-content {
     text-align: center;
     color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 #hero h1 {
     font-size: 48px;
     margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headings */
 }
 
-#projects .project-item {
-    border: 1px solid #ddd;
+.newsletter, .contact {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.newsletter h2, .contact h2 {
+    color: #003366; /* Navy Blue */
+}
+
+input, textarea {
+    width: calc(100% - 20px);
     padding: 10px;
-    margin-bottom: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #003366; /* Navy Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00; /* Gold */
 }
 
 footer {
@@ -54,4 +92,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
